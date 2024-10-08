@@ -7,6 +7,10 @@ class Room:
         self.linked_rooms={}
         self.character = None
         self.item = None
+        self.lock_code = None
+
+    def is_locked(self):
+        return self.lock_code is not None
 
     def get_description(self):
         return self.description
